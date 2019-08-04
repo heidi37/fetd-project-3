@@ -1,0 +1,40 @@
+/* label {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+} */
+
+/* input {
+    width: 100%;
+    display: inline-block;
+} */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+.hr-top {
+    margin-top: 30px;
+    border-top: 5px solid black;
+    border-bottom: 2px solid black;
+    height: 4px;
+}
