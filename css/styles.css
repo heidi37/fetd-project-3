@@ -2,38 +2,44 @@
     box-sizing: border-box;
   }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="time"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #8a97a0;
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #2D3945;
+  }
 
+  header {
+    text-align: center;
+  }
+
+h1 {
+    background: #2D3945;
+    color: white;
+    font-size: 1.7em;
+    padding: 30px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    margin: 0 4px 8px 0;
+h3, small {
+    color: #617383a6;
+    font-weight: 400;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
-    display: inline;
+hr {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 95%;
 }
 
+label,
+p {
+    color: #617383;
+}
 label {
     display: block;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 select {
@@ -48,24 +54,89 @@ fieldset {
 }
 
 legend {
-    margin-bottom: 25px;
     font-size: 1.3em;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="time"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeefaf;
+  border-radius: 5px;
+
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 4px 8px 0;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline;
+}
+
+input:focus {
+    border: 2px solid #2D3945;
+}
+
+select {
+    height: 50px;
+}
+
+textarea {
+    height: 100px;
+}
+
+::placeholder {
+    text-align: right;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .9em;
+    color: #617383a6;
+}
+
+select[placeholder="Choose State"] {
+    color: #617383a6;
+    border: 10px solid transparent;
 }
 
 button {
-    padding: 19px 39px 18px 39px;
+    padding: 20px;
+    margin: 20px 0;
     color: #FFF;
     background-color: #4EBBB5;
     font-size: 24px;
+    font-weight: 700;
     text-align: center;
     border-radius: 5px;
     width: 100%;
     border: 1px solid rgb(67, 160, 155);
   }
 
+  small {
+      display: block;
+      text-align: center;
+      font-style: italic;
+      margin: 0 auto;
+      font-size: 1em;
+      padding: 20px;
+  }
+
 .hr-top {
     margin-top: 30px;
     border-top: 5px solid black;
     border-bottom: 2px solid black;
-    height: 4px;
+    height: 12px;
 }
