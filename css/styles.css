@@ -1,3 +1,5 @@
+/* BASE SELECTORS */
+
 * {
     box-sizing: border-box;
   }
@@ -23,13 +25,17 @@ h3, small {
     font-weight: 400;
 }
 
+h2 {
+    margin-top: 30px;
+}
+
 hr {
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 30px;
     border-style: solid;
     border-width: 1.5px;
-    width: 95%;
+    width: 100%;
 }
 
 label,
@@ -38,7 +44,7 @@ p {
 }
 label {
     display: block;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
@@ -51,11 +57,13 @@ select {
 fieldset {
     border: none;
     margin-top: 25px;
+    padding: 0;
 }
 
 legend {
     font-size: 1.3em;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 input[type="text"],
@@ -99,22 +107,9 @@ textarea {
     height: 100px;
 }
 
-::placeholder {
-    text-align: right;
-    font-weight: 400;
-    font-style: italic;
-    font-size: .9em;
-    color: #617383a6;
-}
-
-select[placeholder="Choose State"] {
-    color: #617383a6;
-    border: 10px solid transparent;
-}
-
 button {
     padding: 20px;
-    margin: 20px 0;
+    margin: 25px 0 10px;
     color: #FFF;
     background-color: #4EBBB5;
     font-size: 24px;
@@ -134,9 +129,77 @@ button {
       padding: 20px;
   }
 
-.hr-top {
-    margin-top: 30px;
+/* ID SELECTORS */
+
+#hr-top {
+    margin: 40px 0 0;
+    padding: 0;
     border-top: 5px solid black;
     border-bottom: 2px solid black;
     height: 12px;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* CLASS SELECTORS */
+
+/* PSUEDO SELECTORS */
+
+  ::placeholder {
+    text-align: right;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .9em;
+    color: #617383a6;
+}
+
+/* ATTRIBUTE SELECTORS */
+
+select[placeholder="Choose State"] {
+    color: #617383a6;
+    border: 10px solid transparent;
+}
+
+input[name="user_zip"] {
+    width: 180px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .container{
+        width: 85%;
+        max-width: 600px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex label {
+        flex-basis: 30%;
+        margin-top: 10px;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .flex-row-zip {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .flex-row-zip input {
+        margin-left: -44px;
+    }
+
+
+
 }

@@ -13,33 +13,39 @@
     <header>
         <h1>THE CODE REVIEW</h1>
     
-        <div class="container">
-            <div>
+        
+            <div class="container">
                 <h2>Signup for our newsletter</h2>
                 <h3>Get the latest news on how your code is doing right in your inbox</h3>
-                <div class="hr-top">&nbsp;</div>
+                <div id="hr-top">&nbsp;</div>
             </div>
     </header>
 
-    <main>
+        <div class="container">
                 <form method="POST" action="index.html">
-                    <fieldset>
+                    <fieldset class="flex">
                         <legend>Contact Information</legend>
+                        <div class="flex-row">
                         <label for="fname">Full Name</label>
                         <input type="text" id="fname" name="user_fname" placeholder="Required" required>
-
+                        </div>
+                        <div class="flex-row">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="user_email" placeholder="Required" required>
-
+                        </div>  
+                        <div class="flex-row">        
                         <label for="email">Phone Number</label>
                         <input type="tel" id="phone" name="user_phone">
-
+                        </div>
+                        <div class="flex-row">
                         <label for="street">Street Address</label>
                         <input type="text" id="street" name="user_street">
-
+                        </div>
+                        <div class="flex-row">
                         <label for="city">City</label>
                         <input type="text" id="city" name="user_city">
-
+                        </div>
+                        <div class="flex-row">
                         <label for="state">State</label>
                         <select id="state" name="user_state" placeholder="Choose State">
                                 <option value="">Choose State</option> 
@@ -95,8 +101,11 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
                         </select>
-                    <label for="zip">Zip <Code></Code></label>
+                        </div>
+                        <div class="flex-row-zip">
+                    <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user_zip">
+                    </div>
                 </fieldset>
 
 
@@ -136,7 +145,6 @@
         </footer>
 
         </div>
-    </main>
     
 </body>
 </html>
