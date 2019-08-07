@@ -122,9 +122,8 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #e8eeefaf;
+  background-color: #d9dadb;
   border-radius: 5px;
-
 }
 
 input[type="checkbox"],
