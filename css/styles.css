@@ -1,3 +1,5 @@
+/* -------ELEMENT SELECTORS------ */
+
 * {
     box-sizing: border-box;
   }
@@ -13,14 +15,15 @@ header {
 }
 
 h1 {
-    background: #2D3945;
-    color: white;
-    font-size: 1.7em;
-    padding: 30px;
+  background: #2D3945;
+  color: white;
+  font-size: 1.7em;
+  padding: 30px;
 }
 
 h2 {
   margin: 0;
+  color: rgb(61, 148, 144);
 }
 
 h3 {
@@ -29,8 +32,8 @@ h3 {
 }
 
 h3, small {
-    color: #617383a6;
-    font-weight: 400;
+  color: #617383a6;
+  font-weight: 400;
 }
 
 div {
@@ -38,12 +41,12 @@ div {
 }
 
 hr {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border-style: solid;
-    border-width: 1.5px;
-    width: 100%;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 1.5px;
+  width: 100%;
 }
 
 label,
@@ -51,38 +54,66 @@ p {
     color: #617383;
 }
 label {
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 10px;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
+  padding: 6px;
+  height: 50px !important;
+  border-radius: 2px;
   }
 
 fieldset {
-    border: none;
-    margin: 35px 0 0;
-    padding: 0;
+  border: none;
+  margin: 35px 0 0;
+  padding: 0;
 }
 
 legend {
-    font-size: 1.3em;
-    font-weight: 700;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 
 legend + p {
   margin-top: 25px;
 }
 
+textarea {
+  height: 150px !important;
+  margin: 10px 0 !important;
+}
+
+button {
+  padding: 20px;
+  margin: 20px 0;
+  color: #FFF;
+  background-color: #4EBBB5;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgb(67, 160, 155);
+  }
+
+small {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin: 0 auto;
+  font-size: 1em;
+  padding: 20px;
+}
+
+/* -------ATTRIBUTE SELECTORS------ */
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
   height: auto;
@@ -97,64 +128,43 @@ select {
 
 input[type="checkbox"],
 input[type="radio"] {
-    margin: 0 4px 8px 0;
+  margin: 0 4px 8px 0;
 }
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-    display: inline;
+  display: inline;
 }
 
 input[id="zip"]{
   width: 150px;
 }
 
-input:focus {
-    border: 2px solid #2D3945;
-}
+/* -------PSEUDO SELECTORS------ */
 
-select {
-    height: 50px;
-}
-
-textarea {
-    height: 100px;
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid #2D3945;
+  background: #4EBBB5;
+  transition: ease-in 500ms;
+  color: white;
 }
 
 ::placeholder {
-    text-align: right;
-    font-weight: 400;
-    font-style: italic;
-    font-size: .9em;
-    color: #617383a6;
+  text-align: right;
+  font-weight: 400;
+  font-style: italic;
+  font-size: .9em;
+  color: #617383a6;
 }
 
-select[placeholder="Choose State"] {
-    color: #617383a6;
-    border: 10px solid transparent;
+textarea::placeholder,
+input[type="tel"]::placeholder {
+  text-align: left;
 }
 
-button {
-    padding: 20px;
-    margin: 20px 0;
-    color: #FFF;
-    background-color: #4EBBB5;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 5px;
-    width: 100%;
-    border: 1px solid rgb(67, 160, 155);
-  }
-
-small {
-    display: block;
-    text-align: center;
-    font-style: italic;
-    margin: 0 auto;
-    font-size: 1em;
-    padding: 20px;
-}
+/* -------CLASS SELECTORS------ */
 
 .container {
   width: 95%;
@@ -163,16 +173,23 @@ small {
 }
 
 .hr-top {
-    margin-top: 30px;
-    border-top: 5px solid black;
-    border-bottom: 2px solid black;
-    height: 12px;
+  margin-top: 30px;
+  border-top: 5px solid black;
+  border-bottom: 2px solid black;
+  height: 12px;
 }
+
+/* -------ID SELECTORS------ */
 
 #top-text {
   text-align: center;
   margin-top: 40px;
+}
 
+#newsletter {
+  background: rgba(78, 187, 181, 0.356);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* -------MEDIA QUERIES------- */

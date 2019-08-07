@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -21,8 +22,9 @@
             <div class="hr-top">&nbsp;</div>
         </div>
 
-    <main>
+        <main>
             <form method="POST" action="index.html">
+                <section id="contact">
                 <fieldset class="top-fieldset">
                     <legend>Contact Information</legend>
 
@@ -37,8 +39,8 @@
                     </div>
 
                     <div>
-                    <label for="email">Phone Number</label>
-                    <input type="tel" id="phone" name="user_phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
                     </div>
 
                     <div>
@@ -53,8 +55,8 @@
 
                     <div>
                     <label for="state">State</label>
-                    <select id="state" name="user_state" placeholder="Choose State">
-                            <option value="">Choose State</option> 
+                    <select id="state" name="user_state">
+                            <option value="" id="choose">Choose State</option> 
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -112,44 +114,48 @@
                         <label for="zip">Zip Code</label>
                         <input type="text" id="zip" name="user_zip">
                     </div>
-            </fieldset>
+                </fieldset>
+                </section>
 
+                <hr>
 
-            <hr>
+                <section id="newsletter">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <p>Select the newsletters you would like to receive</p>
 
-            <fieldset>
-                <legend>Newsletter</legend>
-                <p>Select the newsletters you would like to receive</p>
+                    <input type="checkbox" id="html_newsletters" name="user_newsletters" value="html" checked>
+                    <label for="html_newsletters">HTML News</label><br>
 
-                <input type="checkbox" id="html_newsletters" value="html" name="user_newsletters" checked>
-                <label for="html_newsletters">HTML News</label><br>
+                    <input type="checkbox" id="css_newsletters" value="css" name="user_newsletters" >
+                    <label for="css_newsletters">CSS News</label><br>
 
-                <input type="checkbox" id="css_newsletters" value="css" name="user_newsletters" >
-                <label for="css_newsletters">CSS News</label><br>
-
-                <input type="checkbox" id="js_newsletters" value="javascript" name="user_newsletters" >
-                <label for="js_newsletters">Javascript News</label>
-                <br>
-                <label>Newsletter format</label>
-                
-                <input type="radio" id="html_format" name="user_news_format" value="html" checked>
-                <label for="html_format">HTML</label>
-                <br>
-                <input type="radio" id="css_format" name="user_news_format" value="css">
-                <label for="css_format">CSS</label>
-                <br>
-                <label for="topics">Other topics you'd like to hear about</label>
-                <textarea id="topics" name="user_topics"></textarea>
-            </fieldset>
+                    <input type="checkbox" id="js_newsletters" value="javascript" name="user_newsletters" >
+                    <label for="js_newsletters">Javascript News</label>
+                    <br>
+                    
+                    <label>Newsletter format</label>
+                    <input type="radio" id="html_format" name="user_news_format" value="html" checked>
+                    <label for="html_format">HTML</label>
+                    <br>
+                    <input type="radio" id="css_format" name="user_news_format" value="css">
+                    <label for="css_format">CSS</label>
+                    <br>
+                    <label for="topics">Other topics you'd like to hear about</label>
+                    <textarea id="topics" name="user_topics" placeholder="Please tell us your interests."></textarea>
+                </fieldset>
+                </section>
 
                 <button type="submit">Sign Up</button>
 
-        </form>
-    </main>
+            </form>
+        </main>
+
         <footer>
             <small>Copyright The Code Review</small>
         </footer>
-        </div>
+
+        </div> <!--END CONTAINER DIV-->
 </body>
 </html>
 
