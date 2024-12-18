@@ -1,6 +1,5 @@
 # Newsletter SignUp Form
 
-# Responsive Layout Mock Portfolio
 This was a very early-stage project in the Team Treehouse [Front-End Web Development Tech Degree](https://teamtreehouse.com/techdegree/front-end-web-development) program.
 
 The goal of the project was to create a responsive newsletter signup form with customized focus states. It is not a functioning form. I only developed the front-end code.
